@@ -75,6 +75,10 @@ body {
     margin-left: 15px;
 }
 
+.experience ul {
+    list-style: square;
+}
+
 .experience li {
     font-style: normal;
     font-weight: 700;
