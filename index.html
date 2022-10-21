@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>CV</title>
 </head>
 <body>
@@ -21,37 +22,13 @@
             <div class="about">
                 <h2>Software developer</h2>
                 <h1>Nataliia Shobotova</h1>
-                <p class="about-description">T-SQL, HTML, CSS </p>
-            </div>
-
-            <!-- Projects -->
-            <div class="experience">
-                <h3>Projects</h3>
-                <ol>
-                    <li>
-                        <span><a href="https://shobotova-cv.netlify.app/" target="_blank">My CV</a>..........................................................................................</span>
-                        [<span> HTML5, CSS3 </span>]
-                    </li>
-                    <!-- <li>
-                        <span>Calculator..................................................................................</span>[<span> HTML5, CSS3, JS </span>]</span>
-                    </li> -->
-                    <li>
-                        <span>Finances.....................................................................................</span>[<span> T-SQL, ETL </span>]
-                    </li>
-                    <li>
-                        <span>Paper Mill (Obuhiv and Arkhangelsk) - MES.....</span>[<span> PL-SQL, Crystal Reports </span>]
-                        
-                    </li>
-                    <li>
-                        <span>Arcelor Mittal Kriviy Rig....................................................</span>[<span> T-SQL, MS SQL Reports </span>]
-                    </li>
-                </ol>
             </div>
 
             <!-- Work experience -->
             <div class="experience">
                 <h3>Work experience</h3>
-                <!-- Compamy #1 -->
+                
+                <!-- Compamy #3 -->
                 <!-- <div>
                     <h4>Front-End Developer <span>Courses</span></h4>
                     <p>September 2022 - up to now   <span>|</span>   Netherlands</p>
@@ -71,44 +48,46 @@
                 <div>
                     <h4>MS SQL Developer <span>EPAM Systems Ukraine</span></h4>
                     <p>August 2015 - April 2018 <span>|</span>   Ukraine</p>
+                    <h5>Project: <span>Investment Bank</span></h5>
                     <ul>
                         <li>
-                            <span>Developing ETL applications</span>
+                            <span>Provided the migration data between adjacent systems</span>
                         </li>
                         <li>
-                            <span>Programming scripts, procedures and triggers for application development</span>
+                            <span>Created scripts, procedures and triggers for application development</span>
                         </li>
                         <li>
-                            <span>Creating unit tests</span>
+                            <span>Builded unit tests</span>
                         </li>
                         <li>
-                            <span>Analyze existing T-SQL queries for performance improvements</span>
+                            <span>Analyzed the existing queries for performance improvements</span>
                         </li>
                         <li>
-                            <span>Optimizations existing T-SQL queries</span>
+                            <span>Optimized the existing queries</span>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Company #3 -->
+                <!-- Company #1 -->
                 <div>
                     <h4>System Engineer <span>Honeywell Process Solutions</span></h4>
                     <p>August 2010 - August 2015 <span>|</span>   Ukraine</p>
+                    <h5>Projects: <span>Arcelor Mittal Kryvyi Rih, Paper Mill (Obuhiv and Arkhangelsk)</span></h5>
                     <ul>
                         <li>
-                            <span>Configuration system</span>
+                            <span>Configured MES system</span>
                         </li>
                         <li>
-                            <span>Developing reports using MS SQL Reporting Services</span>
+                            <span>Developed reports using MS SQL Reporting Services</span>
                         </li>
                         <li>
-                            <span>Creating reports using Crystal Reports</span>
+                            <span>Created reports using Crystal Reports</span>
                         </li>
                         <li>
-                            <span>Providing technical documentation</span>
+                            <span>Contributed the technical documentation</span>
                         </li>
                         <li>
-                            <span>Implementation consulting for customers</span>
+                            <span>Provided consultation for customers for using systems</span>
                         </li>
                     </ul>
                 </div>
@@ -127,29 +106,44 @@
 
         <!-- Sidebar -->
         <aside class="sidebar">
-            <img src="img/my_photo.jpg" alt="my photo" class="photo"> <!-- used optimized photo file -->
+            <!-- <img src="img/my_photo.jpg" alt="my photo" class="photo">  -->
             <!-- Contacts -->
             <div class="contacts sidebar-content">
                 <h3 class="sidebar-title">Contacts</h3>
-                    <p>
+                   <table>
+                    <tr>
+                        <td><i class="bi bi-telephone-fill contact-type"></i></td>
+                        <td><a class="contact-details" href="tel:+31657460644">+316 57 460 644</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="bi bi-envelope-fill contact-type"></i></td>
+                        <td><a class="contact-details" href="mailto:samulikn@ukr.net">samulikn@ukr.net</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="bi bi-geo-alt-fill contact-type"></i></td>
+                        <td><p class="contact-details">Amsterdam, NL</p></td>
+                    </tr>
+                   </table> 
+
+                    <!-- <p>
                         <span class="contact-type">C:</span>
                         <a class="contact-link" href="tel:+31657460644">+316 57 460 644</a>
                     </p>
                     <p>
                         <span class="contact-type">E:</span>
                         <a class="contact-link" href="mailto:samulikn@ukr.net">samulikn@ukr.net</a>
-                    </p>
+                    </p> -->
             </div>
 
             <!-- Tech skills -->
             <div class="sidebar-content">
                 <h3 class="sidebar-title">Tech skills</h3>
                 <ul class="skills-list">
-                    <li><span>CSS</span></li>
-                    <li><span>HTML5</span></li>
                     <!-- <li><span>JavaScript</span></li> -->
                     <li><span>T-SQL</span></li>
-                    <li><span>VCS Git</span></li>
+                    <li><span>PL-SQL</span></li>
+                    <li><span>CSS</span></li>
+                    <li><span>HTML5</span></li>
                 </ul>
             </div>
 

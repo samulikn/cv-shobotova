@@ -16,7 +16,7 @@ body {
 .main-content {
     background-color: #F5F7FA;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-    padding: 105px 90px 105px 90px;
+    padding: 85px 90px 100px 90px;
 }
 
 /* about me styles */
@@ -28,7 +28,7 @@ body {
 .about h2 {
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 17px;
     color: #000000;
     margin-bottom: 20px;
@@ -41,15 +41,6 @@ body {
     line-height: 55px;
     color: #000000;
     margin-bottom: 25px;
-}
-
-.about-description {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #595959;
-    width: 400px;
 }
 
 /* experience styles */
@@ -67,6 +58,7 @@ body {
     color: #000000;
     margin-bottom: 10px;
 }
+
 
 /* styles for ordered and unordered lists */
 
@@ -96,10 +88,6 @@ body {
     color: #595959;
 }
 
-.experience a {
-    color: #595959;
-}
-
 .experience h4 {
     font-style: normal;
     font-weight: 700;
@@ -115,6 +103,16 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: #FB6D3A;
+}
+
+.experience h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .experience p {
@@ -134,38 +132,18 @@ body {
     color: #000000;
 }
 
-.experience h5 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    margin-bottom: 10px;
-} 
-
 
 /* sidebar styles */
 .sidebar {
     background-color: #1E2939;
-    padding-top: 40px;
+    padding-top: 150px;
     width: 370px;
-}
-
-/* photo styles */
-.photo {
-    width: 370px;
-    margin-bottom: 50px;
 }
 
 /* aside content styles */
 .sidebar-content {
     margin-left: 40px;
     margin-bottom: 45px;
-}
-
-/* aside content styles for tag p */
-.sidebar-content p {
-    margin: 0;
 }
 
 /* Sidebar title styles*/
@@ -186,15 +164,16 @@ body {
     line-height: 24px;
     color: #FFFFFF;
     margin-right: 10px;
-
 }
-.contact-link {
+
+.contact-details {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: #ECE9E9;
-
+    padding: 0;
+    margin: 0;
 }
 
 /* Tech and Soft skills styles for tag ul */
