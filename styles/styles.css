@@ -8,15 +8,14 @@ body {
     display: flex;
     flex-direction: row-reverse;
     width: 1200px;
-    margin: 0 auto;
-    
+    margin: 0 auto;    
 }
 
-/* main content styles */
+/****** main content styles ******/
 .main-content {
     background-color: #F5F7FA;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-    padding: 85px 90px 100px 90px;
+    padding: 90px 90px 100px 90px;
 }
 
 /* about me styles */
@@ -133,7 +132,7 @@ body {
 }
 
 
-/* sidebar styles */
+/****** sidebar styles ******/
 .sidebar {
     background-color: #1E2939;
     padding-top: 150px;
@@ -195,4 +194,42 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+}
+
+@media print {
+    .main {
+        width: 1000px;
+    }
+
+    .main-content {
+        padding-left: 70px;
+        padding-right: 70px;
+        box-shadow: inherit;
+    }
+
+    .sidebar {
+        width: 270px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    /* main styles */
+        .main {
+            display: block;
+            width: 100%;
+        }
+        
+        .main-content {
+            background-color: #F5F7FA;
+            padding: 15px 10px 15px 10px;
+        }
+
+        .sidebar {
+            background-color: #1E2939;
+            padding-top: 50px;
+            padding-bottom: 100px;
+            width: 100%;
+        }
+
+
 }
