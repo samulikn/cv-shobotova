@@ -10,6 +10,7 @@
     --yellow: #FDC435;
     --white: white;
     --grey: #828282;
+    --black: black;
 }
 
 html, body {
@@ -22,23 +23,32 @@ html, body {
     position: absolute;
     width: 100%;
     display: inline;
-    padding: 5px 10px 5px 20px;
+    padding: 15px 90px 5px 130px;
+    /* font-family: 'Comfortaa'; */
     font-size: 18px;
+    font-weight: normal;
     z-index: 1;
 }
 
 .top-navigation p {
+    font-family: 'Comfortaa';
     float: left;
 }
 
 .nav-buttons {
-    padding-right: 10px;
     float: right;
+}
+
+.nav-buttons a {
+    font-family: 'Comfortaa';
+    margin-right: 40px;
+    color: var(--black);
+    font-weight: normal;
 }
 
 .intro {
     position: relative;
-    margin: 0 0 20px 20px;
+    margin-left: 130px;
 }
 
 .photo {
@@ -48,31 +58,52 @@ html, body {
 }
 
 .vacature {
-    padding-top: 50px;
-    margin-bottom: 5px;
+    font-family: 'Nunito';
+    padding-top: 110px;
+    /* padding-left: 135px; */
+    margin-bottom: 10px;
     font-size: 20px;
+    font-weight: bold;
     color: var(--yellow);
 }
 
+.details { 
+    max-width: 480px;
+}
+
+h1 {
+    font-size: 62px;
+    /* font-weight: bold; */
+}
+
 .details p {
+    font-family: 'Nunito';
     padding: 30px 0 30px 0;
     font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
     color: var(--grey);
 }
 
 button {
-    padding: 7px 10px 7px 10px;
+    font-family: 'Roboto';
+    padding: 7px 15px 7px 15px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 #btn-projects, #btn-media {
-    border-radius: 5px;
+    border-radius: 7px;
     margin-right: 10px;
 }
 
 #btn-projects {
     background-color: var(--yellow);
+    border-color: var(--yellow);
+}
+
+#btn-media {
+    background-color: var(--lightgray);
 }
 
 .intro::after {
@@ -158,11 +189,28 @@ h2 {
 }
 
 footer {
+    position: relative;
     text-align: center;
 }
 
+.icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* color: var(--grey); */
+}
+
 footer p {
-    color: var(--grey);
+    margin-top: 10px;
+    color: var(--grey)
+} 
+
+.footer-picture {
+    max-height: 10%;
+    width: 100%;
+    /* position: absolute; */
+    z-index: -100;
 }
 
 @media only screen and (max-width:767px) {
