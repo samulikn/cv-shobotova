@@ -2,7 +2,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Playfair Display', 'Arial', 'sans-serif';
 }
 
 :root {
@@ -14,18 +13,19 @@
 }
 
 html, body {
+    font-family: 'Playfair Display', 'Arial', 'sans-serif';
+    font-size: 18px;
     width: 100%;
     background-color: var(--lightgray);
-    /* box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1); */
 }
 
 .top-navigation {
     position: absolute;
     width: 100%;
     display: inline;
-    padding: 15px 90px 5px 130px;
-    /* font-family: 'Comfortaa'; */
-    font-size: 18px;
+    /* padding: 15px 90px 5px 130px; */
+    padding: 0.8em 5em 3.3em 7.2em;
+    font-size: 1rem;
     font-weight: normal;
     z-index: 1;
 }
@@ -41,65 +41,86 @@ html, body {
 
 .nav-buttons a {
     font-family: 'Comfortaa';
-    margin-right: 40px;
+    margin-right: 2.2em;
     color: var(--black);
     font-weight: normal;
 }
 
 .intro {
     position: relative;
-    margin-left: 130px;
+    margin-left: 7.2em;
+    margin-bottom: 7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about {
+    flex-basis: 45%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.profile-photo {
+    flex-basis: 55%;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .photo {
-    float: right;
-    width: 50%;
-    z-index: 0;
+    width: 100%;
+    /* height: 100%; */
 }
 
 .vacature {
     font-family: 'Nunito';
-    padding-top: 110px;
-    /* padding-left: 135px; */
-    margin-bottom: 10px;
-    font-size: 20px;
+    /* padding-top: 110px;
+    margin-bottom: 10px; */
+    /* font-size: 20px; */
+    font-size: 1.1em;
+    padding-top: 5em;
+    margin-bottom: 0.5em;
     font-weight: bold;
     color: var(--yellow);
 }
 
 .details { 
-    max-width: 480px;
+    /* max-width: 480px; */
+    padding-right: 6em;
+    /* text-align: justify; */
 }
 
 h1 {
-    font-size: 62px;
+    font-size: 3.5em;
     /* font-weight: bold; */
 }
 
 .details p {
     font-family: 'Nunito';
-    padding: 30px 0 30px 0;
-    font-size: 24px;
+    /* padding: 30px 0 30px 0; */
+    padding: 1.4em 0 1.4em 0;
+    font-size: 1.4em;
     font-weight: 300;
-    line-height: 32px;
+    line-height: 1.5em;
     color: var(--grey);
 }
 
 button {
     font-family: 'Roboto';
-    padding: 7px 15px 7px 15px;
-    font-size: 18px;
+    font-size: 1em;
+    padding: 0.4em 0.8em 0.4em 0.8em;
+    /* font-size: 18px; */
     font-weight: 400;
 }
 
 #btn-projects, #btn-media {
-    border-radius: 7px;
-    margin-right: 10px;
+    border-radius: 0.4em;
+    margin-right: 0.6em;
 }
 
 #btn-projects {
     background-color: var(--yellow);
-    border-color: var(--yellow);
+    /* border-color: var(--yellow); */
 }
 
 #btn-media {
@@ -216,10 +237,10 @@ footer p {
 @media only screen and (max-width:767px) {
     body, html {
         font-size: x-small;
-        height: 100%;
+        /* height: 100%; */
     }
 
-    .projects {
+    /* .projects {
         margin: 10px auto 10px auto;
     }
 
@@ -235,5 +256,5 @@ footer p {
     .top-navigation, button, .details p, 
     .vacature, .btn-view-project {
         font-size: smaller;
-    }
+    } */
 }
