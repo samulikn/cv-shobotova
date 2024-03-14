@@ -14,45 +14,45 @@
 
 html, body {
     font-family: 'Playfair Display', 'Arial', 'sans-serif';
-    font-size: 18px;
+    font-size: 1.2vw;
     width: 100%;
+    height: 100%;
     background-color: var(--lightgray);
 }
 
-.top-navigation {
+.header {
     position: absolute;
     width: 100%;
     display: inline;
-    /* padding: 15px 90px 5px 130px; */
-    padding: 0.8em 5em 3.3em 7.2em;
-    font-size: 1rem;
-    font-weight: normal;
+    padding: 1em 6.7em 3.3em 6.66em;
+    font-size: 1.04em;
     z-index: 1;
 }
 
-.top-navigation p {
+.header p {
     font-family: 'Comfortaa';
     float: left;
 }
 
 .nav-buttons {
+    font-family: 'Raleway';
     float: right;
 }
 
 .nav-buttons a {
-    font-family: 'Comfortaa';
-    margin-right: 2.2em;
+    margin-left: 2.53em;
     color: var(--black);
-    font-weight: normal;
+    text-decoration: none;
 }
 
 .intro {
     position: relative;
-    margin-left: 7.2em;
-    margin-bottom: 7em;
+    margin-left: 6.95em;
+    margin-bottom: 8.05em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /* flex-basis: 629px; */
 }
 
 .about {
@@ -69,62 +69,59 @@ html, body {
 
 .photo {
     width: 100%;
-    /* height: 100%; */
+    /* flex-basis: 629px; */
 }
 
 .vacature {
     font-family: 'Nunito';
-    /* padding-top: 110px;
-    margin-bottom: 10px; */
-    /* font-size: 20px; */
-    font-size: 1.1em;
-    padding-top: 5em;
-    margin-bottom: 0.5em;
-    font-weight: bold;
+    font-size: 1.17em;
+    padding-top: 5.4em;
+    margin-bottom: 0.66em;
+    font-weight: 600;
     color: var(--yellow);
 }
 
 .details { 
-    /* max-width: 480px; */
-    padding-right: 6em;
-    /* text-align: justify; */
+    padding-right: 6.4em;
+    font-size: 1.05em;
 }
 
 h1 {
-    font-size: 3.5em;
-    /* font-weight: bold; */
+    font-size: 4.4vw;
+    line-height: 122%;
+    text-align: justify;
 }
 
 .details p {
     font-family: 'Nunito';
-    /* padding: 30px 0 30px 0; */
-    padding: 1.4em 0 1.4em 0;
-    font-size: 1.4em;
+    padding: 1.3em 0 1.3em 0;
+    font-size: 1.35em;
     font-weight: 300;
-    line-height: 1.5em;
+    line-height: 1.45em;
     color: var(--grey);
 }
 
 button {
     font-family: 'Roboto';
-    font-size: 1em;
-    padding: 0.4em 0.8em 0.4em 0.8em;
-    /* font-size: 18px; */
+    font-size: 1.05em;
+    padding: 0.5em 1.2em 0.5em 1.2em;
     font-weight: 400;
+    border-style: solid;
 }
 
 #btn-projects, #btn-media {
     border-radius: 0.4em;
-    margin-right: 0.6em;
+    margin-right: 0.45em;
 }
 
 #btn-projects {
     background-color: var(--yellow);
-    /* border-color: var(--yellow); */
+    border-color: var(--yellow);
 }
 
 #btn-media {
-    background-color: var(--lightgray);
+    background-color: transparent;
+    border-color: var(--black);
 }
 
 .intro::after {
@@ -135,109 +132,131 @@ button {
 
 h2 {
     margin: auto;
-    border-bottom: 3px solid var(--yellow);
     width: fit-content;
-    text-align: center;
-    font-size: 48px;
-    font-weight: bold;
+    font-size: 2.78em;
+    font-weight: 700;
+}
+
+.line {
+    height: 0.2rem;
+    width: 5.8em;
+    border-radius: 0.2em;
+    margin: 0.5em auto;
+    background: var(--yellow);
 }
 
 .projects {
-    margin: 30px auto 80px auto;
-    width: 70%;
+    margin: 4.5em auto 8em auto;
+    width: 68.8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 50px;
+    gap: 4.5em;
 
 }
 
 .project-info {
     background-color: var(--white);
-    /* padding: 10px; */
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
-    border-radius: 15px;
-    box-shadow: 6px 6px 20px 0.1px;
+    border-radius: 1.3em;
+    box-shadow: 0 0 0.4em 0 var(--grey);
+    border-style: none;
+
 }
 
 .project-image {
-    flex-shrink: 1;
     flex-basis: 50%;
+    flex-shrink: 1;
     flex-grow: 1;
+    align-self: stretch;
 }
 
 .project-details {
-    padding: 50px 10px 50px 10px;
+    padding-left: 2.8em;
+    padding-right: 3em;
+    /* padding: 1.3em 3em 0.5em 2.8em; */
     flex-basis: 50%;
     flex-shrink: 1;
     flex-grow: 1;
 }
 
 .project-name {
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 2.3em;
+    font-weight: 600;
+    /* margin-bottom: 0.7em; */
 }
 
 .project-description {
+    font-family: 'Nunito';
+    font-size: 1.05em;
+    font-weight: 300;
+    line-height: 150%;
     color: var(--grey);
+    margin: 1.5em 0 1.3em 0;
 }
 
 .btn-view-project {
-    margin-top: 15px;
-    border-radius: 20px;
-    background-color: var(--white);
+    /* margin: 1em 0 1em 0; */
+    border-radius: 1.4em;
+    background-color: transparent;
+    border-style: solid;
+    border-width: thin;
+    border-color: var(--black);
 }
 
 .project-screen-right {
     width: 100%;
     height: 100%;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
+    object-fit: cover;
+    border-bottom-right-radius: 1.3em;
+    border-top-right-radius: 1.3em;
 }
 
 .project-screen-left {
     width: 100%;
     height: 100%;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
+    object-fit: cover;
+    border-bottom-left-radius: 1.3em;
+    border-top-left-radius: 1.3em;
 }
 
-.project-photo {
-    width: 50%;
-}
-
-footer {
+.footer {
     position: relative;
     text-align: center;
 }
 
 .icons {
     position: absolute;
-    top: 50%;
+    font-size: 2em;
+    color: var(--black);
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* color: var(--grey); */
 }
 
-footer p {
-    margin-top: 10px;
+.footer p {
+    font-family: 'Nunito';
+    font-size: 0.9rem;
+    margin-top: 1.5em;
     color: var(--grey)
 } 
 
 .footer-picture {
-    max-height: 10%;
     width: 100%;
-    /* position: absolute; */
-    z-index: -100;
+    z-index: -10;
 }
 
-@media only screen and (max-width:767px) {
+.bi-linkedin::before {
+    color: black;
+}
+
+@media only screen and (max-width: 768px) {
     body, html {
-        font-size: x-small;
-        /* height: 100%; */
+        font-size: 10px;
+        width: 100%;
     }
 
     /* .projects {
