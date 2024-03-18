@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --lightgray: #F9FAFF;
+    --yellow: #FDC435;
+    --white: #FFFFFF;
+    --grey: #828282;
+    --black: black;
+    --blue-grey: #deebf7;
+}
+
+html, body {
+    font-family: 'Playfair Display', 'Arial', 'sans-serif';
+    font-size: 1.2vw;
+    width: 100%;
+    /* height: 100%; */
+    background-color: var(--lightgray);
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    padding: 1.1em 2.22em 3.3em 6.7em;
+    font-size: 1.1em;
+}
+
+.header p {
+    font-family: 'Comfortaa';
+    float: left;
+}
+
+.nav-buttons {
+    font-family: 'Raleway';
+    float: right;
+    font-weight: 400;
+}
+
+.nav-buttons a {
+    margin-left: 2.5em;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.active {
+    border-width: 0.13em;
+    padding-bottom: 0.15em;
+    border-bottom-color: var(--black);
+    border-bottom-style: solid;
+}
+
+.intro {
+    padding: 5.9em 2.4em 8.9em 7.4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4em;
+}
+
+.about {
+    flex-basis: 55%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.details {
+    padding-right: 3.5em;
+}
+
+h2 {
+    font-size: 2.95em;
+    font-weight: 700;
+    margin-bottom: 0.78em;
+    margin-top: 0.19em;
+}
+
+.details p {
+    /* margin: 1.8em 0 1.8em 0; */
+    font-family: 'Nunito';
+    font-size: 1.5em;
+    line-height: 148%;
+    color: var(--grey);
+    font-weight: 300;
+}
+
+button {
+    margin-top: 1.8em;
+    font-family: 'Roboto';
+    font-size: 1.1em;
+    padding: 0.5em 1.3em 0.5em 1.3em;
+    font-weight: 400;
+    border-style: solid;
+    /* line-height: 150%; */
+    border-radius: 0.4em;
+    background-color: var(--yellow);
+    border-color: var(--yellow);
+}
+
+.my-photo {
+    flex-basis: 45%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.photo {
+    width: 100%;
+}
+
+.footer {
+    margin-left: 7.4em;
+    margin-right: 2.4em;
+    text-align: center;
+    font-family: 'Nunito';
+}
+
+.bi-linkedin::before {
+    color: black;
+    font-size: 2.3em;
+}
+
+.footer p {
+    margin-top: 2.2em;
+    font-size: 0.99em;
+    color: var(--grey);
+}

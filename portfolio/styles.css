@@ -149,18 +149,12 @@ h2 {
 }
 
 .projects {
-    margin: 4.5em auto 8em auto;
+    margin: 4.5em auto 8.6em auto;
     width: 68.8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 4.5em;
-}
-
-.shadow {
-    box-shadow: 0 0 0.4em 0 var(--lightgray);
-    width: 55.1em;
-    height: 29.1em;
+    gap: 4.8em;
 }
 
 .project-info {
@@ -231,17 +225,43 @@ h2 {
 }
 
 .footer {
-    position: relative;
+    /* position: relative; */
     text-align: center;
 }
 
 .icons {
-    position: absolute;
+    /* position: absolute; */
     font-size: 2em;
     color: var(--black);
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* top: 15%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+.introMe {
+    position: relative;
+    padding: 6em 3.8em 5em 6.6em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4.9em
+}
+
+.facts-aboutMe {
+    flex-basis: 55%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.my-photo {
+    flex-basis: 45%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.myPhoto {
+    width: 100%;
 }
 
 .footer p {
@@ -251,14 +271,16 @@ h2 {
     color: var(--grey)
 } 
 
-.footer-picture {
+/* .footer-picture {
     width: 100%;
     height: 100%;
-}
+} */
 
 .bi-linkedin::before {
     color: black;
 }
+
+
 
 @media only screen and (max-width: 768px) {
     /* body, html {
