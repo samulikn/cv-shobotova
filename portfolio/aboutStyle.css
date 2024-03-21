@@ -11,6 +11,7 @@
     --grey: #828282;
     --black: black;
     --blue-grey: #deebf7;
+    --blue: blue;
 }
 
 html, body {
@@ -24,8 +25,11 @@ html, body {
 .header {
     position: absolute;
     width: 100%;
-    padding: 1.1em 2.22em 3.3em 6.7em;
-    font-size: 1.1em;
+    padding: 0.6em 6.2em 0 6.7em;
+    font-family: 'Comfortaa';
+    font-size: 1.04em;
+    font-weight: 500;
+    line-height: 180%;
 }
 
 .header p {
@@ -33,32 +37,46 @@ html, body {
     float: left;
 }
 
-.nav-buttons {
+.navigation {
     font-family: 'Raleway';
     float: right;
-    font-weight: 400;
 }
 
-.nav-buttons a {
-    margin-left: 2.5em;
+.nav-buttons, .line {
+    display: flex;
+    flex-direction: row;
+    gap: 1.7em;
+}
+.line {
+    justify-content: space-between;
+    padding: 0 0.5em;
+}
+
+a {
     color: var(--black);
     text-decoration: none;
 }
 
+.nav-buttons a {
+    padding: 0.03em 0.5em;
+}
+
 .active {
-    border-width: 0.13em;
-    padding-bottom: 0.15em;
-    border-bottom-color: var(--black);
-    border-bottom-style: solid;
+    height: 0.1em;
+    width: 2.9em;
+    background: var(--black);
+}
+
+.default {
+    height: 0.1em;
+    width: 4em;
 }
 
 .intro {
-    padding: 5.9em 2.4em 8.9em 7.4em;
+    padding: 5.2em 6.6em 7.4em 6.9em;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 2.4em;
 }
 
 .about {
@@ -68,33 +86,29 @@ html, body {
 }
 
 .details {
-    padding-right: 3.5em;
+    padding-right: 4.3em;
 }
 
 h2 {
-    font-size: 2.95em;
+    font-size: 2.78em;
     font-weight: 700;
-    margin-bottom: 0.78em;
-    margin-top: 0.19em;
 }
 
 .details p {
-    /* margin: 1.8em 0 1.8em 0; */
+    margin: 1.5em 0 1.2em 0;
     font-family: 'Nunito';
-    font-size: 1.5em;
+    font-size: 1.41em;
     line-height: 148%;
     color: var(--grey);
     font-weight: 300;
 }
 
 button {
-    margin-top: 1.8em;
     font-family: 'Roboto';
-    font-size: 1.1em;
-    padding: 0.5em 1.3em 0.5em 1.3em;
+    font-size: 1.05em;
+    padding: 0.5em 1.2em 0.5em 1.2em;
     font-weight: 400;
     border-style: solid;
-    /* line-height: 150%; */
     border-radius: 0.4em;
     background-color: var(--yellow);
     border-color: var(--yellow);
@@ -111,8 +125,6 @@ button {
 }
 
 .footer {
-    margin-left: 7.4em;
-    margin-right: 2.4em;
     text-align: center;
     font-family: 'Nunito';
 }
@@ -123,7 +135,16 @@ button {
 }
 
 .footer p {
-    margin-top: 2.2em;
-    font-size: 0.99em;
+    margin-top: 2.3em;
+    margin-bottom: 5em;
+    font-size: 0.9em;
+    font-weight: 600;
     color: var(--grey);
+}
+
+
+a:hover {
+    border-radius: 0.3em;
+    background-color: rgba(252, 196, 54, 0.4);
+
 }
