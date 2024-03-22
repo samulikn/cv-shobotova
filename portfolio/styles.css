@@ -11,6 +11,8 @@
     --grey: #828282;
     --black: black;
     --blue-grey: #deebf7;
+    --transparent-grey: rgb(255, 255, 255, 0.4);
+    --transparent-yellow: rgba(252, 196, 54, 0.4);
 }
 
 html, body {
@@ -24,13 +26,13 @@ html, body {
 .header {
     position: absolute;
     width: 100%;
-    display: inline;
-    padding: 1em 6.7em 3.3em 6.66em;
+    padding: 0.6em 6.2em 0 6.66em;
     font-size: 1.04em;
     z-index: 1;
 }
 
 .header p {
+    padding-top: 0.4em;
     font-family: 'Comfortaa';
     float: left;
 }
@@ -38,10 +40,14 @@ html, body {
 .nav-buttons {
     font-family: 'Raleway';
     float: right;
+    display: flex;
+    flex-direction: row;
+    gap: 1.7em;
+
 }
 
 .nav-buttons a {
-    margin-left: 2.53em;
+    padding: 0.4em 0.5em;
     color: var(--black);
     text-decoration: none;
 }
@@ -70,7 +76,6 @@ html, body {
 
 .photo {
     width: 100%;
-    /* flex-basis: 629px; */
 }
 
 .vacature {
@@ -108,7 +113,6 @@ button {
     padding: 0.5em 1.2em 0.5em 1.2em;
     font-weight: 400;
     border-style: solid;
-    /* border-width: thin; */
 }
 
 #btn-projects, #btn-media {
@@ -149,7 +153,7 @@ h2 {
 }
 
 .projects {
-    margin: 4.5em auto 8.6em auto;
+    margin: 4.5em auto 8em auto;
     width: 68.8%;
     display: flex;
     flex-direction: column;
@@ -176,7 +180,6 @@ h2 {
 .project-details {
     padding-left: 2.8em;
     padding-right: 2.2em;
-    /* padding: 1.3em 3em 0.5em 2.8em; */
     flex-basis: 50%;
     flex-shrink: 1;
     flex-grow: 1;
@@ -185,7 +188,6 @@ h2 {
 .project-name {
     font-size: 2.3em;
     font-weight: 600;
-    /* margin-bottom: 0.7em; */
 }
 
 .project-description {
@@ -198,7 +200,6 @@ h2 {
 }
 
 .btn-view-project {
-    /* margin: 1em 0 1em 0; */
     border-radius: 1.4em;
     background-color: transparent;
     border-style: solid;
@@ -225,20 +226,15 @@ h2 {
 }
 
 .footer {
-    /* position: relative; */
     text-align: center;
 }
 
-.icons {
-    /* position: absolute; */
+#contacts {
     font-size: 2.3em;
     color: var(--black);
-    /* top: 15%;
-    left: 50%; */
-    /* transform: translate(-50%, -50%); */
 }
 
-.introMe {
+/* .introMe {
     position: relative;
     padding: 6em 3.8em 5em 6.6em;
     display: flex;
@@ -262,47 +258,30 @@ h2 {
 
 .myPhoto {
     width: 100%;
-}
+} */
 
 .footer p {
     font-family: 'Nunito';
     font-size: 0.9rem;
-    margin: 2em 0 4.5em 0;
+    margin: 2em 0 5em 0;
     color: var(--grey)
 } 
-
-/* .footer-picture {
-    width: 100%;
-    height: 100%;
-} */
 
 .bi-linkedin::before {
     color: black;
 }
 
+button:hover {
+    cursor: pointer;
+}
 
+.btn-view-project:hover, 
+#btn-media:hover, 
+#btn-projects:hover {
+    background-color: var(--transparent-yellow);
+}
 
-@media only screen and (max-width: 768px) {
-    /* body, html {
-        font-size: 10px;
-        width: 100%;
-    } */
-
-    /* .projects {
-        margin: 10px auto 10px auto;
-    }
-
-    .project-info {
-        flex-shrink: 2;
-    }
-
-    .project-name {
-        font-size: medium;
-        font-weight: bold;
-    }
-
-    .top-navigation, button, .details p, 
-    .vacature, .btn-view-project {
-        font-size: smaller;
-    } */
+.header a:hover {
+    border-radius: 0.3em;
+    background-color: var(--transparent-grey);
 }
