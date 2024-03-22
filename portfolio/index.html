@@ -14,40 +14,41 @@
 </head>
 <body>
     <div class="header">
-        <p>Madelyn Torff</p> 
+        <p class="header-name">Madelyn Torff</p> 
         <nav class="nav-buttons">
-            <a href="about.html">About</a>
-            <a href="#projects-list">Projects</a>
-            <a href="#contacts">Contacts</a>
+            <a class="nav-item default" href="about.html">About</a>
+            <a class="nav-item default" href="#projects">Projects</a>
+            <a class="nav-item default" href="#contacts">Contacts</a>
         </nav>
     </div>
     
-    <div class="intro">
-        <div class="about">
-            <p class="vacature">UI/UX DESIGNER</p>
-            <div class="details">
+    <div class="intro-box projects-page">
+        <div class="intro short-intro">
+            <p class="vacancy">UI/UX DESIGNER</p>
+            <div class="content short-content">
                 <h1>Hello,  my name <br>is Madelyn Torff</h1> 
                 <p>Short text with details about you, what you do or your professional career. You can add more information on the about page.</p>
-            </div>
-            <div class="buttons">
-                <button id="btn-projects" onclick="window.location.href='#projects-list'">Projects</button>
-                <button id="btn-media" onclick="window.open('http://www.linkedin.com/in/nataliia-shobotova-912954b6/', '_blank')">LinkedIn</button>
+                <div>
+                    <a class="buttons btn-primary" href='#projects'>Projects</a>
+                    <a class="buttons btn-secondary" href='http://www.linkedin.com/in/nataliia-shobotova-912954b6/'>LinkedIn</a>
+                </div>
             </div>
         </div>  
-        <div class="profile-photo">
+        <div class="profile-photo big-photo">
             <img src="images/profile-photo-mt.png" alt="profile photo" class="photo">
         </div>
     </div>
 
-    <h2 id="projects-list">Projects</h2>
-    <div class="line"></div>
-    <div class="projects">
-        <!-- <div class="shadow"> -->
+    <div id="projects">
+        <div class="title">
+            <h2>Projects</h2>
+            <div class="line"></div>
+        </div>
         <div class="project-info">
             <div class="project-details">
                 <p class="project-name">Project Name</p>
                 <p class="project-description">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
-                <button class="btn-view-project" onclick="window.open('https://github.com/samulikn/web-dev-for-beginners/tree/main/terrarium', '_blank')">View project</button>
+                <button class="btn-view-project" onclick="window.open('https://github.com/samulikn/web-dev-for-beginners/tree/main/terrarium', '_blank')">View Project</button>
             </div>
             <div class="project-image">
                 <a href="https://samulikn.github.io/web-dev-for-beginners/terrarium/">
@@ -55,7 +56,6 @@
                 </a>
             </div>
         </div>
-        <!-- </div> -->
         <div class="project-info">
             <div class="project-image">
                 <a href="https://samulikn.github.io/web-dev-for-beginners/typing-game/">
@@ -65,14 +65,14 @@
             <div class="project-details">
                 <p class="project-name">Project Name</p>
                 <p class="project-description"> What was your role, your deliverables, if the project was personal, freelancing.</p>
-                <button class="btn-view-project" onclick="window.open('https://github.com/samulikn/web-dev-for-beginners/tree/main/typing-game', '_blank')">View project</button>
+                <button class="btn-view-project" onclick="window.open('https://github.com/samulikn/web-dev-for-beginners/tree/main/typing-game', '_blank')">View Project</button>
             </div>
         </div>
         <div class="project-info">
             <div class="project-details">
                 <p class="project-name">Project Name</p>
                 <p class="project-description">You can also add in this description the type of the project, if it was for web, mobile, electron.</p>
-                <button class="btn-view-project" onclick="window.open('https://samulikn.github.io/web-dev-for-beginners/space-game/','_blank')">View project</button>
+                <button class="btn-view-project" onclick="window.open('https://samulikn.github.io/web-dev-for-beginners/space-game/','_blank')">View Project</button>
             </div>
             <div class="project-image">
                 <a href="https://samulikn.github.io/web-dev-for-beginners/space-game/">
@@ -109,6 +109,9 @@
 
     <div class="footer">
         <div id="contacts">
+            <a href="https://github.com/samulikn">
+                <i class="bi-github contact-type"></i>
+            </a>
             <a href="http://www.linkedin.com/in/nataliia-shobotova-912954b6/">
                 <i class="bi-linkedin contact-type"></i>
             </a>
