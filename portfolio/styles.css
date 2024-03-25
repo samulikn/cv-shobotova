@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -285,10 +285,6 @@ h2 {
 .bi-linkedin::before,
 .bi-github::before {
     color: black;
-}
-
-button:hover {
-    cursor: pointer;
 }
 
 .nav-item:hover {
