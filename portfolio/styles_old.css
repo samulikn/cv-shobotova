@@ -5,16 +5,17 @@
 }
 
 :root {
-    --lightgray: #F9FAFF;
-    --yellow: #FDC435;
-    --white: #FFFFFF;
+    --lightgray: #f9faff;
+    --yellow: #fdc435;
+    --white: #ffffff;
     --grey: #828282;
     --black: black;
     --blue-grey: #deebf7;
 }
 
-html, body {
-    font-family: 'Playfair Display', 'Arial', 'sans-serif';
+html,
+body {
+    font-family: "Playfair Display", "Arial", "sans-serif";
     font-size: 1.2vw;
     width: 100%;
     background-color: var(--lightgray);
@@ -32,25 +33,27 @@ html, body {
 }
 
 .header-name {
-    font-family: 'Comfortaa';
+    font-family: "Comfortaa";
     float: left;
 }
 
-.nav-buttons {
-    font-family: 'Raleway';
+.header-navigation {
+    font-family: "Raleway";
     float: right;
     display: flex;
     flex-direction: row;
     gap: 2.7em;
 }
 
-.nav-item, .header-name, .buttons {
+.nav-item,
+.header-name,
+.buttons {
     color: var(--black);
     text-decoration: none;
     border-bottom: 0.13em solid transparent;
 }
 
-.active {
+.active-nav-item {
     border-bottom-color: var(--black);
 }
 
@@ -68,7 +71,7 @@ html, body {
     margin-right: 6.8em;
 }
 
-.intro.short-intro {
+.short-intro {
     flex-basis: 45%;
     flex-grow: 1;
     flex-shrink: 1;
@@ -80,7 +83,7 @@ html, body {
     flex-shrink: 1;
 }
 
-.intro.main-intro {
+.main-intro {
     padding-top: 0.5em;
     flex-basis: 56%;
     flex-grow: 1;
@@ -100,13 +103,13 @@ html, body {
 }
 
 .vacancy {
-    font-family: 'Nunito';
+    font-family: "Nunito";
     font-size: 1.17em;
     font-weight: 600;
     color: var(--yellow);
 }
 
-.content { 
+.intro-text {
     margin: 0.66em 0;
     font-size: 1.04em;
     display: flex;
@@ -138,8 +141,8 @@ h2 {
     line-height: 1.45em;
 }
 
-.content p {
-    font-family: 'Nunito';
+.intro-text p {
+    font-family: "Nunito";
     font-size: 1.35em;
     font-weight: 300;
     line-height: 150%;
@@ -147,7 +150,7 @@ h2 {
 }
 
 .buttons {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 1em;
     line-height: 150%;
     padding: 0.5em 1.3em 0.5em 1.3em;
@@ -155,7 +158,8 @@ h2 {
     border-width: 0.13em;
 }
 
-.btn-primary, .btn-secondary {
+.btn-primary,
+.btn-secondary {
     border-radius: 0.4em;
     margin-right: 0.45em;
 }
@@ -228,7 +232,7 @@ h2 {
 }
 
 .project-description {
-    font-family: 'Nunito';
+    font-family: "Nunito";
     font-size: 1.05em;
     font-weight: 300;
     line-height: 150%;
@@ -264,7 +268,7 @@ h2 {
 .footer {
     margin-top: 4.8em;
     text-align: center;
-    font-family: 'Nunito';
+    font-family: "Nunito";
 }
 
 #contacts {
@@ -273,14 +277,14 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 1.3em; 
+    gap: 1.3em;
 }
 
 .footer p {
     font-size: 0.9rem;
     padding: 1.9em 0 5em 0;
-    color: var(--grey)
-} 
+    color: var(--grey);
+}
 
 .bi-linkedin::before,
 .bi-github::before {
@@ -291,6 +295,6 @@ h2 {
     border-bottom-color: var(--yellow);
 }
 
-.nav-item.default:hover {
+.nav-item.default-nav-item:hover {
     border-bottom-color: var(--black);
 }
