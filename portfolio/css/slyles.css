@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --lightgray: #f9faff;
+  --yellow: #fdc435;
+  --white: #ffffff;
+  --grey: #828282;
+  --black: black;
+  --blue-grey: #deebf7;
+}
+
+html,
+body {
+  font-family: "Playfair Display", "Arial", "sans-serif";
+  font-size: 1.2vw;
+  width: 100%;
+  background-color: var(--lightgray);
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 3.1em;
+  padding: 0.6em 6.7em 0 6.7em;
+  font-size: 1.04em;
+  font-weight: 500;
+  line-height: 180%;
+  z-index: 1;
+}
+
+.name {
+  font-family: "Comfortaa";
+  float: left;
+}
+
+.nav-bar {
+  font-family: "Raleway";
+  float: right;
+  display: flex;
+  flex-direction: row;
+  gap: 2.7em;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+  border-bottom: 0.13em solid transparent;
+}
+
+.nav-bar__item:hover {
+  border-bottom-color: var(--yellow);
+}
+
+.nav-bar__item--active,
+.nav-bar__item--default:hover {
+  border-bottom-color: var(--black);
+}
+
+.intro-box {
+  position: relative;
+  margin-left: 7em;
+  top: -3.2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.intro-box::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.about-page {
+  margin-top: 5.4em;
+  margin-right: 6.8em;
+}
+
+.intro--short {
+  flex-basis: 45%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.profile-photo--big {
+  flex-basis: 54%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.intro--main {
+  padding-top: 0.5em;
+  flex-basis: 56%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.profile-photo--small {
+  flex-basis: 44%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.vacancy {
+  font-family: "Nunito";
+  font-size: 1.17em;
+  font-weight: 600;
+  color: var(--yellow);
+}
+
+.intro-text {
+  margin: 0.66em 0;
+  font-size: 1.04em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.85em;
+}
+.intro-text p {
+  font-family: "Nunito";
+  font-size: 1.35em;
+  font-weight: 300;
+  line-height: 150%;
+  color: var(--grey);
+}
+
+.intro-text--short {
+  flex-basis: 45%;
+  padding-right: 6.3em;
+}
+
+.intro-text--main {
+  flex-basis: 55%;
+  padding-right: 4.3em;
+}
+
+h1 {
+  font-size: 4.4vw; /*4.4vw;*/
+  line-height: 120%;
+  text-align: justify;
+}
+
+h2 {
+  font-size: 2.7em;
+  font-weight: bold;
+  line-height: 1.45em;
+}
+
+.btn {
+  font-family: "Roboto";
+  font-size: 1em;
+  line-height: 150%;
+  padding: 0.5em 1.3em 0.5em 1.3em;
+  border: solid;
+  border-width: 0.13em;
+}
+
+.btn-primary,
+.btn-secondary {
+  border-radius: 0.4em;
+  margin-right: 0.45em;
+}
+
+.btn-primary {
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border-color: var(--black);
+}
+
+#projects {
+  margin: 5.4em auto 8.1em auto;
+  width: 69%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.55em;
+}
+
+.line {
+  height: 0.25em;
+  width: 59%;
+  border-radius: 0.2em;
+  margin: 0.3em auto;
+  background: var(--yellow);
+}
+
+.project {
+  background-color: var(--white);
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  border-radius: 1.3em;
+  box-shadow: 0 0 2em 0 var(--blue-grey);
+}
+
+.project-screen {
+  flex-basis: 50%;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.project-details {
+  padding-left: 2.85em;
+  padding-right: 2.5em;
+  flex-basis: 50%;
+  flex-shrink: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.4em;
+}
+
+.project__name {
+  font-size: 2.3em;
+  font-weight: 600;
+}
+
+.project__desc {
+  font-family: "Nunito";
+  font-size: 1.05em;
+  font-weight: 300;
+  line-height: 150%;
+  color: var(--grey);
+}
+
+.btn-view-project-code {
+  align-self: flex-start;
+  border-radius: 1.4em;
+  padding: 0.5em 1.5em;
+  background-color: transparent;
+  border-color: var(--black);
+}
+
+.project-screen--right {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 1.3em 1.3em 0;
+}
+
+.project-screen--left {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.3em 0 0 1.3em;
+}
+
+footer {
+  margin-top: 4.8em;
+  text-align: center;
+  font-family: "Nunito";
+}
+footer p {
+  font-size: 0.9em;
+  padding: 1.6em 0 5em 0;
+  color: var(--grey);
+}
+
+#contacts {
+  font-size: 2.2em;
+  color: var(--black);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.3em;
+}
+
+.bi-linkedin::before,
+.bi-github::before {
+  color: var(--black);
+}/*# sourceMappingURL=slyles.css.map */

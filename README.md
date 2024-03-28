@@ -1,4 +1,4 @@
-# Overview
+# Projects
 
 - [Resume](resume)
 - [Portfolio](portfolio)
