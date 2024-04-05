@@ -51,7 +51,9 @@ a {
   border-bottom: 0.13em solid transparent;
 }
 
-.nav-bar__item:hover {
+.nav-bar__item:hover,
+.gitHub-projects:hover,
+.gitHub-resume:hover {
   border-bottom-color: var(--yellow);
 }
 
