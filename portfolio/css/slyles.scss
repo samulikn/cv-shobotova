@@ -51,7 +51,9 @@ a {
   border-bottom: 0.13em solid transparent;
 }
 
-.nav-bar__item:hover {
+.nav-bar__item:hover,
+.gitHub-projects:hover,
+.gitHub-resume:hover {
   border-bottom-color: var(--yellow);
 }
 
@@ -251,8 +253,8 @@ h2 {
 .project-screen--right {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 30rem;
+  // object-fit: cover;
   border-radius: 0 1.3em 1.3em 0;
 
 }
@@ -260,8 +262,8 @@ h2 {
 .project-screen--left {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 30rem;
+  // object-fit: cover;
   border-radius: 1.3em 0 0 1.3em;
 }
 
