@@ -207,22 +207,6 @@ main {
     color: var(--white);
 }
 
-/* @media print {
-    main {
-        width: 1000px;
-    }
-
-    .main-content {
-        padding-left: 70px;
-        padding-right: 70px;
-        box-shadow: inherit;
-    }
-
-    .sidebar {
-        width: 270px;
-    }
-} */
-
 @media only screen and (max-width:767px) {
     /* main styles */
         main {
