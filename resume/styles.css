@@ -20,6 +20,8 @@ body {
 
 /* main styles */
 main {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row-reverse;
     max-width: 1200px;
@@ -30,16 +32,16 @@ main {
 .main-content {
     background-color: var(--white);
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-    padding: 90px 90px 100px 90px;
+    padding: 40px 50px 20px 40px;
 }
 
 /* about me styles */
 .about {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     
 }
 
-.subtitle, .about h1, .experience h3, .experience li, .experience h4, .experience h4 span, .experience h5, .sidebar-title, .contact-type {
+.about h1, .experience h3, .experience li, .experience h4, .experience h4 span, .experience h5, .sidebar-title, .contact-type {
     font-weight: 700;
 }
 
@@ -51,50 +53,63 @@ main {
 /* Replace on p????? */
 .subtitle {
     display: inline-block;
-    font-size: 17px;
+    font-size: 22px;
+    font-weight: 700;
     line-height: 17px;
     color: var(--black);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .about h1 {
-    font-size: 45px;
-    line-height: 55px;
+    font-size: 34px;
+    line-height: 45px;
     color: var(--black);
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
-/* experience styles */
+.summary {
+    text-align: justify;
+    font-size: 14px;
+}
+
+/* experience and education styles */
 
 .experience {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.experience h3, .sidebar-title {
+.experience h3,
+.education h3,
+.sidebar-title {
     font-size: 22px;
     line-height: 27px;
     margin-bottom: 10px;
 }
 
 /* projects, work and education title styles */
-.experience h3 {
+.experience h3
+, .education h3 {
     color: var(--black);
 }
 
 
 /* styles for ordered and unordered lists */
-.experience ol, .experience ul {
+.experience ol, .experience ul,
+.education ul {
     margin-left: 15px;
 }
 
-.experience ul {
+.experience ul,
+.education ul {
     list-style: square;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.experience li, .experience span, .experience h5, .contact-type, .contact-details, .skills-list span {
+.experience li, .experience span, .experience h5, 
+.education span, .education h5, .education li,
+.contact-type, .contact-details, .skills-list span {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 18px;
 }
 
 .experience li {
@@ -102,41 +117,49 @@ main {
     padding-left: 10px;
 }
 
-.experience span {
+.experience span,
+.education span {
     color: var(--grey);
 }
 
-.experience h4, .experience h4 span {
+.experience h4, .experience h4 span,
+.education h4, .education h4 span {
     font-size: 16px;
     line-height: 20px;
 }
 
-.experience p, .experience p span {
+.experience p, .experience p span,
+.education p, .education p span {
     font-size: 12px;
-    line-height: 15px;
+    line-height: 12px;
 }
 
-.experience h4 {
+.experience h4,
+.education h4 {
     color: var(--black);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-.experience h4 span {
+.experience h4 span,
+.education h4 span {
     color: var(--orange);
 }
 
-.experience h5 {
+.experience h5,
+.education h5 {
     line-height: 17px;
     color: var(--black);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-.experience p {
+.experience p,
+.education p {
     color: var(--light-grey);
     margin-bottom: 10px;
 }
 
-.experience p span {
+.experience p span,
+.education p span {
     color: var(--black);
 }
 
@@ -144,14 +167,13 @@ main {
 /****** sidebar styles ******/
 .sidebar {
     background-color: var(--dark-blue);
+    border-right-style: solid;
     padding-top: 150px;
     width: 350px;
 }
-
 /* aside content styles */
 .sidebar-content {
-    margin-left: 40px;
-    margin-bottom: 45px;
+    margin: 45px 10px 45px 40px;
 }
 
 /* Sidebar title styles*/
@@ -183,22 +205,6 @@ main {
 /* Tech and Soft skills styles for tag span */
 .skills-list span {
     color: var(--white);
-}
-
-@media print {
-    main {
-        width: 1000px;
-    }
-
-    .main-content {
-        padding-left: 70px;
-        padding-right: 70px;
-        box-shadow: inherit;
-    }
-
-    .sidebar {
-        width: 270px;
-    }
 }
 
 @media only screen and (max-width:767px) {
