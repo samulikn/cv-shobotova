@@ -221,23 +221,23 @@ h2 {
 }
 
 .project-details {
-  padding-left: 2.85em;
-  padding-right: 2.5em;
+  padding: 1em 2.85em 1em 2.5em;
   flex-basis: 50%;
   flex-shrink: 1;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 1.4em;
 }
 
 .project__name {
-  font-size: 2.3em;
+  font-size: 2em;
   font-weight: 600;
 }
 
 .project__desc {
+  text-align: justify;
   font-family: "Nunito";
   font-size: 1.05em;
   font-weight: 300;
@@ -251,19 +251,20 @@ h2 {
   padding: 0.5em 1.5em;
   background-color: transparent;
   border-color: var(--black);
+  margin-bottom: 1em;
 }
 
 .project-screen--right {
   display: block;
   width: 100%;
-  height: 30rem;
+  height: 100%;
   border-radius: 0 1.3em 1.3em 0;
 }
 
 .project-screen--left {
   display: block;
   width: 100%;
-  height: 30rem;
+  height: 100%;
   border-radius: 1.3em 0 0 1.3em;
 }
 

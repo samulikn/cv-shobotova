@@ -50,16 +50,15 @@ main {
 }
 
 .subtitle {
-    display: inline-block;
     font-size: 22px;
     font-weight: 700;
-    line-height: 17px;
+    line-height: 26px;
     color: var(--black);
-    margin-bottom: 7px;
+    margin-bottom: 15px;
 }
 
 .about h1 {
-    font-size: 30px;
+    font-size: 22px;
     line-height: 36px;
     color: var(--black);
     margin-bottom: 7px;
@@ -166,8 +165,8 @@ main {
 .sidebar {
     background-color: var(--dark-blue);
     border-right-style: solid;
-    padding-top: 150px;
-    width: 350px;
+    padding-top: 75px;
+    width: 235px;
 }
 /* aside content styles */
 .sidebar-content {
@@ -215,6 +214,10 @@ main {
         .main-content {
             background-color: var(--white);
             padding: 15px 10px;
+        }
+
+        .subtitle {
+            line-height: normal;
         }
 
         .sidebar {
