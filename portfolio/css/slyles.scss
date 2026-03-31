@@ -18,6 +18,7 @@ body {
   font-family: "Playfair Display", "Arial", "sans-serif";
   font-size: 1.2vw;
   width: 100%;
+  min-height: 100%;
   background-color: var(--lightgray);
 }
 
@@ -95,7 +96,7 @@ a {
 }
 
 .intro--main {
-  padding-top: 0.5em;
+  // padding-top: 0.5em;
   flex-basis: 56%;
   flex-grow: 1;
   flex-shrink: 1;
@@ -210,6 +211,7 @@ h2 {
 .project {
   background-color: var(--white);
   display: flex;
+  // height: 35em;
   width: 100%;
   flex-direction: row;
   border-radius: 1.3em;
@@ -271,7 +273,8 @@ h2 {
 }
 
 footer {
-  margin-top: 4.8em;
+  
+  // margin-top: 4.8em;
   text-align: center;
   font-family: "Nunito";
 
