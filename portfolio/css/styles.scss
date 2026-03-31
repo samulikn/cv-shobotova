@@ -297,9 +297,11 @@ footer {
   flex-direction: row;
   justify-content: center;
   gap: 1.3em;
+  scroll-behavior: smooth;
 }
 
 .bi-linkedin::before,
-.bi-github::before {
+.bi-github::before,
+.bi-envelop-fill::before {
   color: var(--black);
 }

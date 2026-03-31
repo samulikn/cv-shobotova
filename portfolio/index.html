@@ -27,7 +27,7 @@
     </header>
 
     <main>
-        <div class="intro-box">
+        <section class="intro-box">
             <div class="intro--short">
                 <p class="vacancy">FRONTEND SOFTWARE ENGINEER</p>
                 <div class="intro-text intro-text--short">
@@ -43,16 +43,16 @@
                 </div>
             </div>
             <div class="profile-photo--big">
-                <img src="images/profile-photo.png" alt="profile photo" class="profile-photo">
+                <img src="images/profile-photo.png" alt="profile photo" fetchpriority="high" class="profile-photo">
             </div>
-        </div>
+        </section>
 
-        <div id="projects">
+        <section id="projects">
             <div>
                 <h2>Projects</h2>
                 <div class="line"></div>
             </div>
-            <div class="project">
+            <article class="project">
                 <div class="project-details">
                     <h3 class="project__name">Quizz App</h3>
                     <p class="project__desc">An interactive frontend quiz testing your knowledge in HTML, CSS,
@@ -66,14 +66,14 @@
                     <a class="btn btn-view-project-code" target="_blank" rel="noopener noreferrer"
                         href="https://samulikn.github.io/quiz-app/">View Project</a>
                 </div>
-                <div class="project-screen">
-                    <img src="images/quiz-app.png" alt="Quiz app image" class="project-screen--right">
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-screen">
-                    <img src="images/driving-school-Moen.png" alt="Driving school image" class="project-screen--left">
-                </div>
+                <picture class="project-screen">
+                    <img src="images/quiz-app.png" alt="Quiz app image" loading="lazy" class="project-screen--right">
+                </picture>
+            </article>
+            <article class="project">
+                <picture class="project-screen">
+                    <img src="images/driving-school-Moen.png" alt="Driving school image" loading="lazy" class="project-screen--left">
+                </picture>
                 <div class="project-details">
                     <h3 class="project__name">Driving school</h3>
                     <p class="project__desc">A bilingual (NL/EN) marketing website for a driving school in the
@@ -84,8 +84,8 @@
                     <a class="btn btn-view-project-code" target="_blank" href="https://rijschoolmoen.nl" rel="noopener noreferrer">View
                         Project</a>
                 </div>
-            </div>
-            <div class="project">
+            </article>
+            <article class="project">
                 <div class="project-details">
                     <h3 class="project__name">Password generator App</h3>
                     <p class="project__desc">A utility app that generates secure passwords with configurable length and
@@ -96,15 +96,15 @@
                     <a class="btn btn-view-project-code" target="_blank" rel="noopener noreferrer"
                         href="https://samulikn.github.io/password-generator-app/">View Project</a>
                 </div>
-                <div class="project-screen">
-                    <img src="images/password-generator-app.png" alt="Password generator app image"
+                <picture class="project-screen">
+                    <img src="images/password-generator-app.png" alt="Password generator app image" loading="lazy"
                         class="project-screen--right">
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-screen">
-                    <img src="images/tip-calc-app.png" alt="Tip calc image" class="project-screen--left">
-                </div>
+                </picture>
+            </article>
+            <article class="project">
+                <picture class="project-screen">
+                    <img src="images/tip-calc-app.png" alt="Tip calc image" loading="lazy" class="project-screen--left">
+                </picture>
                 <div class="project-details">
                     <h3 class="project__name">Tip calculator App</h3>
                     <p class="project__desc">A bill-splitting calculator that handles custom tip percentages and
@@ -114,8 +114,8 @@
                     <a class="btn btn-view-project-code" target="_blank" rel="noopener noreferrer"
                         href="https://samulikn.github.io/tip-calculator-app">View Project</a>
                 </div>
-            </div>
-            <div class="project">
+            </article>
+            <article class="project">
                 <div class="project-details">
                     <h3 class="project__name">Store app</h3>
                     <p class="project__desc">A responsive app with product browsing, cart management, user
@@ -126,14 +126,14 @@
                     <a class="btn btn-view-project-code" target="_blank" rel="noopener noreferrer"
                         href="https://github.com/samulikn/react-projects/tree/main/store">View Project</a>
                 </div>
-                <div class="project-screen">
-                    <img src="images/bread-store.png" alt="Store" class="project-screen--right">
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-screen">
-                    <img src="images/banking-app.png" alt="Banking app" class="project-screen--left">
-                </div>
+                <picture class="project-screen">
+                    <img src="images/bread-store.png" alt="Online store image" loading="lazy" class="project-screen--right">
+                </picture>
+            </article>
+            <article class="project">
+                <picture class="project-screen">
+                    <img src="images/banking-app.png" alt="Banking app image" loading="lazy" class="project-screen--left">
+                </picture>
                 <div class="project-details">
                     <h3 class="project__name">Banking app</h3>
                     <p class="project__desc">A fictional banking dashboard with transaction history, balance tracking
@@ -144,8 +144,8 @@
                     <a class="btn btn-view-project-code" target="_blank" rel="noopener noreferrer"
                         href="https://github.com/samulikn/react-projects/tree/main/banking-app">View Project</a>
                 </div>
-            </div>
-        </div>
+            </article>
+        </section>
     </main>
 
     <footer>
