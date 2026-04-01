@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/slyles.css">
+    <meta name="description" content="Nataliia Shobotova – Frontend Engineer (React, TypeScript and Tailwind CSS).">
+    <meta name="author" content="Nataliia Shobotova">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +29,7 @@
     </header>
 
     <main>
-        <div class="intro-box">
+        <section class="intro-box">
             <div class="intro--short">
                 <p class="vacancy">FRONTEND SOFTWARE ENGINEER</p>
                 <div class="intro-text intro-text--short">
@@ -38,122 +40,134 @@
                     <div class="btn-container">
                         <a class="btn btn-primary" href='#projects'>Projects</a>
                         <a class="btn btn-secondary"
-                            href="http://www.linkedin.com/in/nataliia-shobotova-912954b6/">LinkedIn</a>
+                            href="https://www.linkedin.com/in/nataliia-shobotova-912954b6/">LinkedIn</a>
                     </div>
                 </div>
             </div>
             <div class="profile-photo--big">
-                <img src="images/profile-photo.png" alt="profile photo" class="profile-photo">
+                <img src="images/profile-photo.webp" alt="profile photo" fetchpriority="high" class="profile-photo">
             </div>
-        </div>
+        </section>
 
-        <div id="projects">
+        <section id="projects">
             <div>
                 <h2>Projects</h2>
                 <div class="line"></div>
             </div>
-            <div class="project">
+            <article class="project">
                 <div class="project-details">
                     <h3 class="project__name">Quizz App</h3>
                     <p class="project__desc">An interactive frontend quiz testing your knowledge in HTML, CSS,
-                        JavaScript, and Accessibility. Built with <b>React</b>, <b>React router</b>, <b>TypeScript</b>,
-                        <b>Tailwind CSS</b>,
-                        and <b>Vite</b>. Featuring topic selection, single answer from each question from a choice of
+                        JavaScript, and Accessibility. Built with <strong>React</strong>, <strong>React router</strong>,
+                        <strong>TypeScript</strong>,
+                        <strong>Tailwind CSS</strong>,
+                        and <strong>Vite</strong>. Featuring topic selection, single answer from each question from a
+                        choice of
                         four, completed state with the score, and a clean dark/light mode
                         toggle.
                     </p>
-                    <!-- <p class="project__desc">Click on the picture to test your knowledge.</p> -->
                     <a class="btn btn-view-project-code" target="_blank" rel="noopener noreferrer"
                         href="https://samulikn.github.io/quiz-app/">View Project</a>
                 </div>
-                <div class="project-screen">
-                    <img src="images/quiz-app.png" alt="Quiz app image" class="project-screen--right">
+                <div class="project-screen img-right">
+                    <img src="images/quiz-app.webp" alt="Quiz app image" loading="lazy" class="project-screen--right">
                 </div>
-            </div>
-            <div class="project">
-                <div class="project-screen">
-                    <img src="images/driving-school-Moen.png" alt="Driving school image" class="project-screen--left">
+            </article>
+            <article class="project">
+                <div class="project-screen img-left">
+                    <img src="images/driving-school-Moen.webp" alt="Driving school image" loading="lazy"
+                        class="project-screen--left">
                 </div>
                 <div class="project-details">
                     <h3 class="project__name">Driving school</h3>
                     <p class="project__desc">A bilingual (NL/EN) marketing website for a driving school in the
                         Netherlands. Demonstrates real-world client-style work: responsive layout, multilingual support,
-                        and a professional content structure. Built with <b>HTML5</b>, <b>Tailwind CSS</b>, and
-                        <b>Vanilla JS (ES6+)</b>.
+                        and a professional content structure. Built with <strong>HTML5</strong>, <strong>Tailwind
+                            CSS</strong>, and
+                        <strong>Vanilla JS (ES6+)</strong>.
                     </p>
-                    <a class="btn btn-view-project-code" target="_blank" href="https://rijschoolmoen.nl" rel="noopener noreferrer">View
+                    <a class="btn btn-view-project-code" target="_blank" href="https://rijschoolmoen.nl"
+                        rel="noopener noreferrer">View
                         Project</a>
                 </div>
-            </div>
-            <div class="project">
+            </article>
+            <article class="project">
                 <div class="project-details">
                     <h3 class="project__name">Password generator App</h3>
                     <p class="project__desc">A utility app that generates secure passwords with configurable length and
-                        character rules. Built with <b>React</b>, <b>TypeScript</b>, and <b>Tailwind CSS</b> with a
+                        character rules. Built with <strong>React</strong>, <strong>TypeScript</strong>, and
+                        <strong>Tailwind CSS</strong> with a
                         strength indicator estimated based on entropy, and one-click clipboard
                         copy.
                     </p>
                     <a class="btn btn-view-project-code" target="_blank" rel="noopener noreferrer"
                         href="https://samulikn.github.io/password-generator-app/">View Project</a>
                 </div>
-                <div class="project-screen">
-                    <img src="images/password-generator-app.png" alt="Password generator app image"
+                <div class="project-screen img-right">
+                    <img src="images/password-generator-app.webp" alt="Password generator app image" loading="lazy"
                         class="project-screen--right">
                 </div>
-            </div>
-            <div class="project">
-                <div class="project-screen">
-                    <img src="images/tip-calc-app.png" alt="Tip calc image" class="project-screen--left">
+            </article>
+            <article class="project">
+                <div class="project-screen img-left">
+                    <img src="images/tip-calc-app.webp" alt="Tip calc image" loading="lazy"
+                        class="project-screen--left">
                 </div>
                 <div class="project-details">
                     <h3 class="project__name">Tip calculator App</h3>
                     <p class="project__desc">A bill-splitting calculator that handles custom tip percentages and
-                        multiple people. Built with <b>HTML5</b>, <b>TypeScript</b>, <b>Tailwind CSS</b> focused on
+                        multiple people. Built with <strong>HTML5</strong>, <strong>TypeScript</strong>,
+                        <strong>Tailwind CSS</strong> focused on
                         clean UX and mobile-first approach.
                     </p>
                     <a class="btn btn-view-project-code" target="_blank" rel="noopener noreferrer"
                         href="https://samulikn.github.io/tip-calculator-app">View Project</a>
                 </div>
-            </div>
-            <div class="project">
+            </article>
+            <article class="project">
                 <div class="project-details">
                     <h3 class="project__name">Store app</h3>
                     <p class="project__desc">A responsive app with product browsing, cart management, user
-                        accounts, and a checkout flow. Built with <b>React</b> + <b>TypeScript</b>, <b>MongoDB</b>
-                        backend, and <b>Tailwind CSS</b> for
+                        accounts, and a checkout flow. Built with <strong>React</strong> + <strong>TypeScript</strong>,
+                        <strong>MongoDB</strong>
+                        backend, and <strong>Tailwind CSS</strong> for
                         the layout.
                     </p>
                     <a class="btn btn-view-project-code" target="_blank" rel="noopener noreferrer"
                         href="https://github.com/samulikn/react-projects/tree/main/store">View Project</a>
                 </div>
-                <div class="project-screen">
-                    <img src="images/bread-store.png" alt="Store" class="project-screen--right">
+                <div class="project-screen img-right">
+                    <img src="images/bread-store.webp" alt="Online store image" loading="lazy"
+                        class="project-screen--right">
                 </div>
-            </div>
-            <div class="project">
-                <div class="project-screen">
-                    <img src="images/banking-app.png" alt="Banking app" class="project-screen--left">
+            </article>
+            <article class="project">
+                <div class="project-screen img-left">
+                    <img src="images/banking-app.webp" alt="Banking app image" loading="lazy"
+                        class="project-screen--left">
                 </div>
                 <div class="project-details">
                     <h3 class="project__name">Banking app</h3>
                     <p class="project__desc">A fictional banking dashboard with transaction history, balance tracking
                         and spending limits.
-                        Features a custom <b>in-memory API</b> and responsive layout with <b>CSS</b>. Built with
-                        <b>React</b> + <b>Vanilla JS</b>.
+                        Features a custom <strong>in-memory API</strong> and responsive layout with
+                        <strong>CSS</strong>. Built with
+                        <strong>React</strong> + <strong>Vanilla JS</strong>.
                     </p>
                     <a class="btn btn-view-project-code" target="_blank" rel="noopener noreferrer"
                         href="https://github.com/samulikn/react-projects/tree/main/banking-app">View Project</a>
                 </div>
-            </div>
-        </div>
+            </article>
+        </section>
     </main>
 
     <footer>
         <div id="contacts">
-            <a href="https://github.com/samulikn" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"> 
+            <a href="https://github.com/samulikn" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
                 <i class="bi-github contact-type"></i>
             </a>
-            <a href="http://www.linkedin.com/in/nataliia-shobotova-912954b6/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <a href="https://www.linkedin.com/in/nataliia-shobotova-912954b6/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn profile">
                 <i class="bi-linkedin contact-type"></i>
             </a>
             <a href="mailto:samulikn@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="MailTo Nataliia">
@@ -165,10 +179,3 @@
 </body>
 
 </html>
-
-<!-- ********* TO DO: ********* -->
-<!-- 1. -->
-<!-- 2. -->
-<!-- 3. -->
-<!-- 4. -->
-<!-- 5. -->

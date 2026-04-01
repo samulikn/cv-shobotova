@@ -32,8 +32,8 @@ main {
 /****** main content styles ******/
 .main-content {
     background-color: var(--white);
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-    padding: 20px 30px;
+    /* box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1); */
+    padding: 15px;
 }
 
 /* about me styles */
