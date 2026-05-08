@@ -310,3 +310,18 @@ footer {
 .bi-envelop-fill::before {
   color: var(--black);
 }
+
+
+@media print {
+  .project {
+    box-shadow: none;
+  }
+
+  html, body {
+      width: 210mm;
+      height: 297mm;
+      // background-color: none;
+      // padding: 0;
+      // margin: 0;
+  }
+}
